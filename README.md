@@ -20,6 +20,6 @@ Source code in <i>contracts</i> folder, including:
 
 Deployed to CELO Alfajores Testnet
 
-- AMM contract: https://explorer.celo.org/alfajores/address/0x68988579dF5F1C182Ee292a2561b1D0c2cca1fb7
+- AMM contract deployed to 0x996ff117Ef92149d9b7783C7cF5F536e0be8aB42
 
-- OLA Token contract: https://explorer.celo.org/alfajores/address/0x296d5bF623c2db0F54A373669E64D757C9A2e537
+- OlameToken contract deployed to 0xF25801625A8e208db1Cde23732BB4454Ceb515ca

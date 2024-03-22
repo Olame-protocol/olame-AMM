@@ -5,18 +5,22 @@ require("@nomiclabs/hardhat-etherscan");
 
 import fs from "fs";
 
-const getSecret = (secretKey: string, defaultValue = "") => {
-  const SECRETS_FILE = "./secrets.js";
-  let secret = defaultValue;
-  if (fs.existsSync(SECRETS_FILE)) {
-    const { secrets } = require(SECRETS_FILE);
-    if (secrets[secretKey]) {
-      secret = secrets[secretKey];
-    }
-  }
+// const getSecret = (secretKey: string, defaultValue = "") => {
+//   const SECRETS_FILE = "./secrets.js";
+//   let secret = defaultValue;
+//   if (fs.existsSync(SECRETS_FILE)) {
+//     const { secrets } = require(SECRETS_FILE);
+//     if (secrets[secretKey]) {
+//       secret = secrets[secretKey];
+//     }
+//   }
 
-  return secret;
-};
+//   return secret;
+// };
+
+
+const PRIVATE_KEY:any ="01f1f0bd43e981bfef51271a5b8238045aa129008459cac9a378e5b409812e48"
+
 
 const config: HardhatUserConfig = {
   solidity: "0.8.17",
@@ -27,8 +31,7 @@ const config: HardhatUserConfig = {
       url: "https://alfajores-forno.celo-testnet.org",
       chainId: 44787,
       gas: 10000000,
-      // replace this ox by you private key
-      accounts: [getSecret('PRIVATE_KEY', 'ox')]
+      accounts: [PRIVATE_KEY],
     }
   },
 };
